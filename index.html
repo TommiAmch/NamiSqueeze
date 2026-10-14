@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#193f30">
+  <meta name="description" content="Meet your fresh favourite. Explore Nami Squeeze's cold-pressed juices and smoothies, from bright citrus blends to tropical greens.">
+  <meta property="og:title" content="Nami Squeeze — Fresh juice. Good mood.">
+  <meta property="og:description" content="Cold-pressed juices, colourful smoothies and a little sunshine in every sip. Explore our menu.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://nami-squeeze.tommi-emil.chatgpt.site/">
+  <meta property="og:image" content="https://nami-squeeze.tommi-emil.chatgpt.site/assets/juice-still-life.png">
+  <title>Nami Squeeze — Fresh juice. Good mood.</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;650;700;750;800;900&family=DM+Serif+Display:ital@1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="topline">A little squeeze. A little sunshine.</div>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="brand" href="#" aria-label="Nami Squeeze home">
+        <svg class="brand-mark" viewBox="0 0 52 52" aria-hidden="true"><circle cx="26" cy="26" r="23" fill="#ff8a35"/><g stroke="#fff8e8" stroke-width="2.8" fill="none"><circle cx="26" cy="26" r="17"/><path d="M26 9v34M9 26h34M14 14l24 24M14 38l24-24"/></g><circle cx="26" cy="26" r="4" fill="#fff8e8"/></svg>
+        <span>Nami<br>Squeeze<span class="brand-dot">.</span></span>
+      </a>
+      <nav aria-label="Main navigation">
+        <a class="nav-text" href="#our-way">Our way</a>
+        <a class="nav-text" href="#contact">Say hello</a>
+        <a class="nav-menu" href="#menu">Explore the menu <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="tiny-sun" aria-hidden="true">✳</span> Cold-pressed. Full of colour.</p>
+        <h1 id="hero-title">Fresh juice.<br>Good <em>mood.</em></h1>
+        <p class="hero-description">Bright citrus. Tropical favourites. Lovely leafy greens. Find your daily dose of delicious with Nami Squeeze.</p>
+        <a class="button button-green" href="#menu">Find your fresh favourite <span aria-hidden="true">↗</span></a>
+        <div class="hero-footnote"><span class="line-drawing" aria-hidden="true">♡</span><span>A little sunshine in every sip.</span></div>
+      </div>
+      <div class="hero-visual">
+        <img src="assets/juice-still-life.png" width="1122" height="1402" fetchpriority="high" alt="Orange, pink and green juices in sunlit glasses with fresh citrus and ginger.">
+        <div class="fresh-stamp" aria-label="Cold-pressed juices, 100% raw"><span>COLD-PRESSED</span><strong>100%<br><em>raw</em></strong><span>JUICY BY NATURE</span></div>
+        <div class="photo-note"><span aria-hidden="true">✳</span> Squeeze a little joy into your day.</div>
+      </div>
+    </section>
+    <div class="flavour-ribbon" aria-hidden="true"><div><span>BRIGHT CITRUS</span><i>✳</i><span>TROPICAL GOODNESS</span><i>✳</i><span>LEAFY GREENS</span><i>✳</i><span>HAPPY SIPS</span><i>✳</i><span>BRIGHT CITRUS</span><i>✳</i></div></div>
+    <section class="menu-section section-wrap" id="menu" aria-labelledby="menu-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">The Nami menu</p><h2 id="menu-title">Meet your<br><em>fresh favourite.</em></h2></div>
+        <p>Ten cold-pressed juices. Two vibrant smoothies.<br>One delicious way to brighten your day.</p>
+      </div>
+      <div class="menu-tools" hidden>
+        <div class="filters" role="group" aria-label="Filter the menu">
+          <button type="button" data-filter="all" aria-pressed="true">All drinks <span>12</span></button>
+          <button type="button" data-filter="juice" aria-pressed="false">Cold-pressed <span>10</span></button>
+          <button type="button" data-filter="smoothie" aria-pressed="false">Smoothies <span>2</span></button>
+        </div>
+        <label class="search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg><span class="sr-only">Search drinks or ingredients</span><input type="search" id="menu-search" placeholder="Find an ingredient…" autocomplete="off"></label>
+      </div>
+      <p class="menu-status" id="menu-status" role="status" aria-live="polite" hidden>Showing all 12 drinks</p>
+      <div class="menu-grid">
+        <article class="drink" data-type="juice" style="--juice:#ee9b28;--tint:#fcf0d6"><div class="drink-top"><span class="drink-number">01</span><span class="drink-type">Cold-pressed · 100% raw</span></div><div class="drink-art" aria-hidden="true"><svg viewBox="0 0 160 120"><use href="assets/fruit.svg#citrus"/></svg><span>Bright &amp; zingy</span></div><h3>Morning Sunshine</h3><p class="ingredients">Orange · Ginger</p><p class="drink-description">A sunny citrus squeeze with a ginger kick.</p></article>
+        <article class="drink" data-type="juice" style="--juice:#b0a243;--tint:#f2f2d8"><div class="drink-top"><span class="drink-number">02</span><span class="drink-type">Cold-pressed · 100% raw</span></div><div class="drink-art" aria-hidden="true"><svg viewBox="0 0 160 120"><use href="assets/fruit.svg#pineapple"/></svg><span>A tropical escape</span></div><h3>Tropic Clean</h3><p class="ingredients">Pineapple · Coconut · Lime</p><p class="drink-description">Tropical sweetness with a refreshing lime finish.</p></article>
+        <article class="drink" data-type="juice" style="--juice:#dc7041;--tint:#fbeadd"><div class="drink-top"><span class="drink-number">03</span><span class="drink-type">Cold-pressed · 100% raw</span></div><div class="drink-art" aria-hidden="true"><svg viewBox="0 0 160 120"><use href="assets/fruit.svg#carrot"/></svg><span>Simply golden</span></div><h3>Amber Boost</h3><p class="ingredients">Carrot</p><p class="drink-description">The mellow, earthy sweetness of pure carrot.</p></article>
+        <article class="drink" data-type="juice" style="--juice:#a13b53;--tint:#f7e3e8"><div class="drink-top"><span class="drink-number">04</span><span class="drink-type">Cold-pressed · 100% raw</span></div><div class="drink-art" aria-hidden="true"><svg viewBox="0 0 160 120"><use href="assets/fruit.svg#pomegranate"/></svg><span>A ruby little gem</span></div><h3>Royal Glow</h3><p class="ingredients">Pomegranate</p><p class="drink-description">Rich ruby colour. Sweet, tangy pomegranate.</p></article>
+        <article class="drink" data-type="juice" style="--juice:#eea329;--tint:#fff1d0"><div class="drink-top"><span class="drink-number">05</span><span class="drink-type">Cold-pressed · 100% raw</span></div><div class="drink-art" aria-hidden="true"><svg viewBox="0 0 160 120"><use href="assets/fruit.svg#citrus"/></svg><span>Sunshine, straight up</span></div><h3>Pure Sunshine</h3><p class="ingredients">Orange</p><p class="drink-description">Just orange. Bright, juicy and beautifully simple.</p></article>
+        <article class="drink" data-type="juice" style="--juice:#b54c67;--tint:#f8e4eb"><div class="drink-top"><span class="drink-number">06</span><span class="drink-type">Cold-pressed · 100% raw</span></div><div class="drink-art" aria-hidden="true"><svg viewBox="0 0 160 120"><use href="assets/fruit.svg#beet"/></svg><span>Pretty in pink</span></div><h3>Pink Glow</h3><p class="ingredients">Beetroot · Apple · Lime</p><p class="drink-description">Earthy beetroot meets sweet apple and zesty lime.</p></article>
+        <article class="drink" data-type="juice" style="--juice:#d1778b;--tint:#f8ecee"><div class="drink-top"><span class="drink-number">07</span><span class="drink-type">Cold-pressed · 100% raw</span></div><div class="drink-art" aria-hidden="true"><svg viewBox="0 0 160 120"><use href="assets/fruit.svg#guava"/></svg><span>Your tropical crush</span></div><h3>Pink Secret</h3><p class="ingredients">Guava</p><p class="drink-description">Fragrant guava with a soft, tropical sweetness.</p></article>
+        <article class="drink" data-type="juice" style="--juice:#889649;--tint:#f0f0dc"><div class="drink-top"><span class="drink-number">08</span><span class="drink-type">Cold-pressed · 100% raw</span></div><div class="drink-art" aria-hidden="true"><svg viewBox="0 0 160 120"><use href="assets/fruit.svg#apple"/></svg><span>The simple favourite</span></div><h3>Naked Apple</h3><p class="ingredients">Apple</p><p class="drink-description">All apple. Crisp, familiar and full of flavour.</p></article>
+        <article class="drink" data-type="juice" style="--juice:#bc9c3c;--tint:#f7f0d8"><div class="drink-top"><span class="drink-number">09</span><span class="drink-type">Cold-pressed · 100% raw</span></div><div class="drink-art" aria-hidden="true"><svg viewBox="0 0 160 120"><use href="assets/fruit.svg#lemon"/></svg><span>A zesty little kick</span></div><h3>Wake Me Up</h3><p class="ingredients">Apple · Lemon · Ginger</p><p class="drink-description">Sweet apple, sharp lemon and warming ginger.</p></article>
+        <article class="drink" data-type="juice" style="--juice:#d16560;--tint:#fce6e0"><div class="drink-top"><span class="drink-number">10</span><span class="drink-type">Cold-pressed · 100% raw</span></div><div class="drink-art" aria-hidden="true"><svg viewBox="0 0 160 120"><use href="assets/fruit.svg#watermelon"/></svg><span>Summer in a sip</span></div><h3>Summer Love</h3><p class="ingredients">Watermelon · Strawberry · Mint</p><p class="drink-description">Juicy summer fruits with a cool touch of mint.</p></article>
+        <article class="drink" data-type="smoothie" style="--juice:#648b51;--tint:#e8efdd"><div class="drink-top"><span class="drink-number">11</span><span class="drink-type">Smoothie</span></div><div class="drink-art" aria-hidden="true"><svg viewBox="0 0 160 120"><use href="assets/fruit.svg#leaf"/></svg><span>A greener getaway</span></div><h3>Green Paradise</h3><p class="ingredients">Mango · Passion fruit · Pineapple · Kale</p><p class="drink-description">A leafy green smoothie with a tropical heart.</p></article>
+        <article class="drink" data-type="smoothie" style="--juice:#416f47;--tint:#dfebdf"><div class="drink-top"><span class="drink-number">12</span><span class="drink-type">Smoothie</span></div><div class="drink-art" aria-hidden="true"><svg viewBox="0 0 160 120"><use href="assets/fruit.svg#leaf"/></svg><span>A taste of Thailand</span></div><h3>Bangkok Green</h3><p class="ingredients">Mixed Thai plants &amp; fruits</p><p class="drink-description">A green blend inspired by Thai plants and fruits.</p></article>
+      </div>
+      <div class="empty-state" id="empty-state" hidden><span aria-hidden="true">✳</span><h3>No matching sips just yet.</h3><p>Try another ingredient or explore the whole menu.</p><button class="button button-green" id="reset-menu" type="button">See all drinks <span aria-hidden="true">↗</span></button></div>
+      <p class="menu-note">Curious about a blend? <a href="mailto:Namisqueeze@gmail.com">Ask us about ingredients and availability <span aria-hidden="true">↗</span></a></p>
+    </section>
+    <section class="our-way" id="our-way" aria-labelledby="way-title">
+      <div class="way-art" aria-hidden="true"><svg viewBox="0 0 200 200"><circle cx="100" cy="100" r="87"/><circle cx="100" cy="100" r="71"/><path d="M100 29v142M29 100h142M50 50l100 100M50 150 150 50"/><circle cx="100" cy="100" r="9"/></svg><span>Good things<br>come from nature.</span></div>
+      <div class="way-copy"><p class="eyebrow">The Nami way</p><h2 id="way-title">Real ingredients.<br><em>Big personality.</em></h2><p>We let the ingredients do the talking. From a simple orange squeeze to pineapple, coconut and lime, every blend has its own little personality.</p><div class="way-facts"><div><strong>10</strong><span>cold-pressed juices</span></div><div><strong>2</strong><span>colourful smoothies</span></div><div><strong>∞</strong><span>good vibes</span></div></div><a class="text-link" href="#menu">Find a flavour that feels like you <span aria-hidden="true">↗</span></a></div>
+    </section>
+    <section class="contact section-wrap" id="contact" aria-labelledby="contact-title"><div><p class="eyebrow">A fresh conversation</p><h2 id="contact-title">Let’s talk <em>juice.</em></h2><p>Have a question about our flavours or ingredients?<br>We’d love to hear from you.</p></div><a class="button button-green" href="mailto:Namisqueeze@gmail.com">Say hello <span aria-hidden="true">↗</span></a></section>
+  </main>
+  <footer><div class="footer-main"><a class="brand footer-brand" href="#" aria-label="Back to Nami Squeeze home"><span>Nami<br>Squeeze<span class="brand-dot">.</span></span></a><p>Fresh juice. Good mood.</p><div class="footer-links"><a href="mailto:Namisqueeze@gmail.com">Namisqueeze@gmail.com <span aria-hidden="true">↗</span></a><a href="tel:0802961212">080 296 1212 <span aria-hidden="true">↗</span></a></div></div><div class="footer-bottom"><span>© <span id="year">2026</span> Nami Squeeze</span><span>Imagery is illustrative.</span><a href="#">Back to top ↑</a></div></footer>
+</body>
+</html>
